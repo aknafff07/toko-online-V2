@@ -79,7 +79,7 @@ Pastikan sudah menginstall:
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/toko-online.git
+https://github.com/aknafff07/toko-online-V2.git
 ```
 
 Masuk ke folder project
