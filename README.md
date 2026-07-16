@@ -57,3 +57,136 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+# Toko Online Laravel
+
+Project Toko Online menggunakan Laravel dan Vite.
+
+## Persyaratan
+
+Pastikan sudah menginstall:
+
+- PHP 8.2 atau lebih baru
+- Composer
+- Node.js dan npm
+- MySQL/MariaDB
+- Git
+
+---
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/USERNAME/toko-online.git
+```
+
+Masuk ke folder project
+
+```bash
+cd toko-online
+```
+
+---
+
+## 2. Install Dependency PHP
+
+```bash
+composer install
+```
+
+---
+
+## 3. Install Dependency Node
+
+```bash
+npm install
+```
+
+---
+
+## 4. Copy File Environment
+
+```bash
+cp .env.example .env
+```
+
+---
+
+## 5. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## 6. Konfigurasi Database
+
+Buat database MySQL, misalnya:
+
+```
+toko_online
+```
+
+Lalu edit file `.env`
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=toko_online
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+---
+
+## 7. Import Database
+
+Jika menggunakan file SQL:
+
+Import file:
+
+```
+toko_online.sql
+```
+
+ke database menggunakan phpMyAdmin.
+
+Atau jika menggunakan migration:
+
+```bash
+php artisan migrate
+```
+
+Jika ada seeder:
+
+```bash
+php artisan migrate --seed
+```
+
+---
+
+## 8. Jalankan Project
+
+Terminal pertama
+
+```bash
+php artisan serve
+```
+
+Terminal kedua
+
+```bash
+npm run dev
+```
+
+---
+
+## 9. Buka Browser
+
+```
+http://127.0.0.1:8000
+```
